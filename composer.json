@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Displaze_Slideshow",
+    "type": "magento-module",
+    "license": "GNU--v3.0",
+    "homepage": "",
+    "description": "Protoshow Slideshow extension",
+    "authors": [
+    {
+        "name": "Aftab Naveed",
+        "email": "aftabnaveed@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
