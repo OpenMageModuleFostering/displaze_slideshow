@@ -60,6 +60,14 @@ class Displaze_MySlideshow_Block_Adminhtml_Slideshow_Edit_Tab_Main extends Mage_
             'disabled'  => $isElementDisabled
         ));
         
+        $fieldset->addField('url', 'text', array(
+            'name'      => 'url',
+            'label'     => Mage::helper('myslideshow')->__('Url'),
+            'title'     => Mage::helper('myslideshow')->__('Url'),
+            'required'  => false,
+            'disabled'  => $isElementDisabled
+        ));
+        
         
         $fieldset->addField('image', 'file', array(
             'label'     => Mage::helper('myslideshow')->__('Image'),

@@ -24,7 +24,7 @@ along with Displaze Web Services Inc..  If not, see <http ://www.gnu.org/license
 <config>
     <modules>
         <Displaze_MySlideshow>
-            <version>1.7.0</version>
+            <version>1.7.1</version>
         </Displaze_MySlideshow>
     </modules>
     

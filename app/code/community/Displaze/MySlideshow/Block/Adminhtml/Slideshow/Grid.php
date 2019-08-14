@@ -64,6 +64,13 @@ class Displaze_MySlideshow_Block_Adminhtml_Slideshow_Grid extends Mage_Adminhtml
             'align'     => 'left',
             'index'     => 'title',
         ));
+        
+        $this->addColumn('url', array(
+            'header'    => Mage::helper('myslideshow')->__('Url'),
+            'align'     => 'left',
+            'index'     => 'url',
+            'width'     => '200px',
+        ));
 
         $this->addColumn('status', array(
             'header'    => Mage::helper('myslideshow')->__('Status'),

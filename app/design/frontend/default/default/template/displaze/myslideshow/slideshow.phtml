@@ -26,7 +26,13 @@ $_slideshow = $this->getSlideshow();
     <ul class="show">
         <?php foreach ($_slideshow as $_slide): ?>
             <li class="slide" data-slide-interval="">
+                <?php if($_slide->getUrl() <> ''): ?>
+                <a href="<?php echo $_slide->getUrl() ?>" alt="<?php $_slide->getTitle(); ?>" />
+                <?php else: ?>
+                <a href="#" alt="<?php echo $_slide->getTitle(); ?>" />
+                <?php endif; ?>
                 <img src="<?php echo Mage::helper('myslideshow')->getSlideshowUrl() . $_slide->getImage() ?>" alt="<?php echo $_slide->getTitle() ?>" />
+                </a>
             </li>
             <?php endforeach; ?>
     </ul>
